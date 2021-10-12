@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #list {
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            color: black;
+            margin-top: 20px;
+        }
+        #errors {
+            color: mediumvioletred;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="" id="inp" cols="30" rows="10"></textarea><br>
+    <div id="errors"></div>
+    <button type="button" onclick="addNote()">Добавить заметку</button>
+    <div id="list"></div>
+    <button type="reset" onclick="clearAll()">Удалить все</button>
+    <script src="/notes/index.js"></script>
+</body>
+</html>
