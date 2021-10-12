@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+            width: 550px;
+            height: 450px;
+            border: 2px solid blue;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            display: flex;
+            flex-flow: column wrap;
+            border-radius: 5px;
+
+        }
+        .message_result {
+            width: 450px;
+            height: 150px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            margin: 5px auto;
+            border-radius: 5px;
+            color: darkgreen;
+            
+        }
+        .input, #login, form {
+            margin: 5px auto;
+            width: 450px;
+            height: 80px;
+            border-radius: 5px;
+        }
+        .button {
+            width: 250px;
+            height: 50px;
+            background-color: cornflowerblue;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="message_result" id="result"></div>
+        <form>
+        <input type="text" id="login" value="" placeholder="логин">
+        <input type="text" id="input" placeholder="введите ваше сообщение" class="input" value="">
+        <button type="button" class="button" onclick="sendComment()">Отправить</button>
+    </form>
+    </div>
+
+<script src="/coments/index.js"></script>
+</body>
+</html>
