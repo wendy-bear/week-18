@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для котовладельцев</title>
+</head>
+
+<body>
+    <h1>Анкета-опросник</h1>
+    <form>
+        <p>1. Кличка питомца:</p>
+        <input type="text" name="firstname" placeholder="Кличка питомца" required>
+
+
+        <p>2. Имя и контакты владельца:</p>
+        <p>Имя: <input type="text" name="firstname" placeholder="Имя владельца" required><br>
+            <p>Фамилия: <input type="text" name="lastname" placeholder="Фамилия владельца" required></p>
+            <p>Отчество: <input type="text" name="patrname" placeholder="Отчество" required></p>
+            <p>Адрес: <input type="text" name="adress" placeholder="Адрес" required></p>
+            <p>Телефон: <input type="tel" name="number" placeholder="+ 795 000 00 00 00" pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/" minlength="10" maxlength="20" required></p>
+            <p>Email:<input type="email" name="email" placeholder="E-Mail"></p>
+
+
+            <p>3. Порода питомца:</p>
+            <select>
+                <option value="0"></option>
+                <option value="1">Абиссинская кошка</option>
+                <option value="2">Бенгальская кошка</option>
+                <option value="3">Беспородная</option>
+                <option value="4">Британская короткошерстная</option>
+                <option value="5">Манчкин</option>
+            </select>
+
+
+            <p>4. Чем питается:</p>
+            <input type="checkbox" name="food" value="1">
+            Сухой корм<br>
+            <input type="checkbox" name="food" value="2">
+            Влажный корм <br>
+            <input type="checkbox" name="food" value="3">
+            Натуральный корм<br>
+
+        
+            <P>5. Пол питомца:</P>
+            <input type="radio" name="s" value="male">Самец
+            <input type="radio" name="s" value="female">Самка
+        
+
+            <p>6. Комментарий владельца:</p>
+            <textarea rows="8" cols="55"></textarea>
+
+
+            <p><button>Отправить анкету</button></p>
+    </form>
+
+
+</body>
+
+</html>
