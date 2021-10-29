@@ -24,17 +24,18 @@ function checkValidity(input) {
         let lenght = input.validity.tooShort;
         errors.push('Пароль не меньше 8 символов<br>');
     }
-    let mailFormat = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
-    if (emailForm.value.match(mailFormat)) {
-        return true;
-    } else {
-        errors.push("Введите емейл правильно<br>");
-
-    }
-
 }
 
+function validEmail() {
+    let mailFormat = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+if (emailForm.value.match(mailFormat)) {
+    return true;
+} else {
+    errors.push("Введите емейл правильно<br>");
 
+}
+}
+validEmail();
 
 function formValid() {
     errors = [];
